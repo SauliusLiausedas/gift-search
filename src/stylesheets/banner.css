@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+.banner {
+    background-image: url('../images/background.jpg');
+    font-family: 'Dancing Script', cursive;
+    background-size: contain;
+    width: 70%;
+    margin: 5% auto;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+    color: rgba(255, 255, 255, 0.9);
+}
+.header {
+    text-align: center;
+    grid-column-start: 2;
+}
+.container {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    padding-top: 10%;
+}
+.searchButton {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    width: 70%;
+    margin: auto;
+    height: 50%;
+    background-color: transparent;
+    outline: none;
+    user-select: none;
+    border: 2px solid rgb(181, 0, 45);
+    font-family: inherit;
+    color: white;
+    font-size: 2em;
+    border-radius: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.searchButton:hover {
+    color: rgb(181, 0, 45);
+}
+.searchButton:active {
+    width: 68%;
+    height: 48%;
+    font-size: 1.95em;
+}
+
+/*====================SELECTCATEGORY=================*/
+.categoryLabel {
+    font-size: 1.5em;
+}
+.categorySelectBox {
+    margin-top: 10%;
+    width: 80%;
+    height: 15%;
+    border: 2px solid rgb(181, 0, 45);
+    outline: none;
+    background-color: rgba(251, 102, 108, 0.9);
+    color: inherit;
+}
+option {
+    filter: hue-rotate(90deg);
+}
+
+/*======================CHECKBOXES===================*/
+.checkBoxGrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0 auto;
+    height: 165px;
+    overflow-y: scroll;
+}
+.checkBoxli {
+    list-style-type: none;
+    line-height: 2em;
+}
+.checkBoxLabel {
+    font-size: 1.3em;
+}
+.checkBox {
+    float: right;
+    margin-top: 7%;
+    zoom: 1.5;
+}
+.checkBoxContainer {
+    padding-top: 0;
+}
+.checkBoxText {
+    margin-top: 0;
+}
+.nextButton {
+    position: relative;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 1023px) {
+    .checkBoxGrid {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .checkBoxGrid {
+        grid-template-columns: auto;
+        overflow-y: scroll;
+        height: 220px;
+    }
+}
