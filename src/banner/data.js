@@ -2,12 +2,19 @@ const data = {
     categories: [{
             name: 'Viešbučiai',
             path: 'viesbuciai',
-            cities: [['Augustavas', '801578009'], ['Prienai', '801624355'], ['Ryga', '801578027'], ['Vilnius', '428300744'], //filters[6]
+            cities: [
+                ['Augustavas', '801578009'], ['Prienai', '801624355'], ['Ryga', '801578027'], ['Vilnius', '428300744'], //filters[6]
                 ['Kaunas', '428385389'], ['Druskininkai', '428385366'], ['Birštonas', '428385367'], ['Palanga', '428385369'],
-                ['Trakai', '428385371'], ['Anykščiai', '428385372'], ['Jūrmala', '801256175'], ['Kiti', '428385400']],
-            peopleCount: [['1', '452295912'], ['2', '452295918'], ['3', '452296019'], ['4', '452295948'], ['5+', '452296156']], //filter[18]
-            nights: [['1', '454241031'], ['2', '454241047'], ['3+', '454241095']], //filter[20]
-            hotelTypes: [['Viešbutis 5★', '443598939'], ['Viešbutis 4★', '443598955'], ['Viešbutis 3★', '443598971'],
+                ['Trakai', '428385371'], ['Anykščiai', '428385372'], ['Jūrmala', '801256175'], ['Kiti', '428385400']
+            ],
+            peopleCount: [
+                ['1', '452295912'], ['2', '452295918'], ['3', '452296019'], ['4', '452295948'], ['5+', '452296156']
+            ], //filter[18]
+            nights: [
+                ['1', '454241031'], ['2', '454241047'], ['3+', '454241095']
+            ], //filter[20]
+            hotelTypes: [
+                ['Viešbutis 5★', '443598939'], ['Viešbutis 4★', '443598955'], ['Viešbutis 3★', '443598971'],
                 ['Viešbutis 2★', '443777395'], ['Viešbutis 1★', '443598976'], ['Sveikatingumo centrai', '443693715'],
                 ['Poilsio namai', '443598990'], ['Dvarai', '443693752'], ['Vilos', '443599003'],
                 ['Apartamentai', '443693774'], ['Sodybos', '443599002']] //filters[15]
@@ -30,6 +37,60 @@ const data = {
             ],
             travelTime: [
                 ['1 diena', '454432905'], ['2-3 dienos', '454432921'], ['4-8 dienos', '454432952'], ['9+ dienos', '454432983']
+            ]
+        },
+        {
+            name: 'Laisvalaikis',
+            path: 'paslaugos/laisvalaikis',
+            cities: [  //filters[6]
+                ['Prienai', '801624355'], ['Ryga', '801578027'], ['Vilnius', '428300744'], ['Marijampolė', '801826693'],
+                ['Kaunas', '428385389'], ['Klaipėda', '428385387'], ['Šiauliai', '428385390'], ['Druskininkai', '428385366'],
+                ['Panevėžys', '428385392'], ['Birštonas', '428385367'], ['Neringa', '428385370'], ['Molėtai', '433446061'],
+                ['Palanga', '428385369'], ['Trakai', '428385371'], ['Anykščiai', '428385372'], ['Kiti', '428385400'],
+            ],
+        },
+        {
+            name: 'Restoranai',
+            path: 'paslaugos/restoranai',
+            cities: [
+                ['Vilnius', '428300744'], ['Kaunas', '428385389'], ['Klaipėda', '428385387'], ['Šiauliai', '428385390'],
+                ['Druskininkai', '428385366'], ['Palanga', '428385369'], ['Trakai', '428385371'], ['Panevėžys', '428385392'],
+                ['Birštonas', '428385367'],
+            ],
+        },
+        {
+            name: 'Grožis',
+            path: 'paslaugos/grozis-ir-sveikata',
+            cities: [
+                ['Vilnius', '428300744'], ['Kaunas', '428385389'], ['Klaipėda', '428385387'], ['Šiauliai', '428385390'],
+                ['Druskininkai', '428385366'], ['Palanga', '428385369'], ['Trakai', '428385371'], ['Kretinga', '801660185'],
+                ['Rietavas', '801624364']
+            ]
+        },
+        {
+            name: 'Sveikata',
+            path: 'paslaugos/sveikata',
+            cities: [
+                ['Vilnius', '428300744'], ['Kaunas', '428385389'], ['Klaipėda', '428385387'], ['Šiauliai', '428385390'],
+                ['Druskininkai', '428385366'], ['Palanga', '428385369'], ['Panevėžys', '428385392'], ['Anykščiai', '428385372'],
+                ['Birštonas', '428385367'], ['Kretinga', '801660185'], ['Rietavas', '801624364'], ['Marijampolė', '801826693'],
+                ['Molėtai', '433446061']
+            ]
+        },
+        {
+            name: 'Nežinau',
+            path: 'dovanos',
+            subcategories: [
+                {name: 'Mamai', path: '/dovanos-mamai'},
+                {name: 'Tėvams', path: '/dovanos-tevams'},
+                {name: 'Senjorams', path: '/dovanos-senjorams'},
+                {name: 'Vaikams', path: '/dovanos-vaikams'},
+            ],
+            cities: [
+                ['Prienai', '801624355'], ['Vilnius', '428300744'], ['Marijampolė', '801826693'], ['Rietavas', '801624364'],
+                ['Kaunas', '428385389'], ['Klaipėda', '428385387'], ['Šiauliai', '428385390'], ['Druskininkai', '428385366'],
+                ['Panevėžys', '428385392'], ['Birštonas', '428385367'], ['Neringa', '428385370'], ['Molėtai', '433446061'],
+                ['Palanga', '428385369'], ['Trakai', '428385371'], ['Kretinga', '801660185'], ['Kiti', '428385400']
             ]
         }
     ]

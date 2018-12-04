@@ -18,6 +18,7 @@ class Banner extends Component {
             minPrice: '',
             maxPrice: '',
             travelLocationCountry: '',
+            subCategory: '',
             page: 0,
         }
     }
@@ -40,7 +41,7 @@ class Banner extends Component {
         this.setState({selectedNights: e, page: this.state.page+1})
     }
     setHotelType(e) {
-        this.setState({selectedHotelType: e, page: this.state.page+999})
+        this.setState({selectedHotelType: e, page: this.state.page+1})
     }
     setTravelLocationCountry(e) {
         this.setState({travelLocationCountry: e, page: this.state.page+1})
@@ -52,11 +53,17 @@ class Banner extends Component {
             this.setState({maxPrice: e.target.value})
         }
     }
+    setSubCategory(e) {
+        this.setState({subCategory: e.target.value, page: this.state.page+1})
+    }
 
 
     redirect() {
         if(this.state.selectedCategory) {
             this.url = this.url + this.state.selectedCategory
+        }
+        if(this.state.subCategory) {
+            this.url = this.url + this.state.subCategory
         }
         if (this.state.selectedCities && this.state.selectedCities.length > 0) {
             let cities = this.state.selectedCities.join(',')
@@ -93,7 +100,7 @@ class Banner extends Component {
         let componentToReturn = ''
         if(!this.state.selectedCategory) {
             return (
-                <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={true}/>
+                <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
             )
         } else if (this.state.selectedCategory === 'viesbuciai') {
             switch (this.state.page) {
@@ -121,7 +128,7 @@ class Banner extends Component {
                     componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
                     break
                 default:
-                    componentToReturn = ''
+                    componentToReturn = <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
             }
         } else if (this.state.selectedCategory === 'keliones') {
             switch (this.state.page) {
@@ -139,14 +146,88 @@ class Banner extends Component {
                     componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
                     break
                 default:
-                    componentToReturn = ''
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
 
+            }
+        } else if (this.state.selectedCategory === 'paslaugos/laisvalaikis') {
+            switch(this.state.page) {
+                case 1:
+                    componentToReturn = <CheckBoxes text={'Pasirinkite Jums tinkančius miestus'}
+                                                    setCheckBoxes={(e) => this.setCities(e)}
+                                                    checkBoxes={this.state.categories[2].cities}/>
+                    break
+                case 2:
+                    componentToReturn = <CheckBoxes text={'Kiek asmenų vyks?'}
+                                                    setCheckBoxes={(e) => this.setPeopleCount(e)}
+                                                    checkBoxes={this.state.categories[0].peopleCount}/>
+                    break
+                case 3:
+                    componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
+                    break
+                default:
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
+            }
+        } else if (this.state.selectedCategory === 'paslaugos/restoranai') {
+            switch(this.state.page) {
+                case 1:
+                    componentToReturn = <CheckBoxes text={'Pasirinkite Jums tinkančius miestus'}
+                                                    setCheckBoxes={(e) => this.setCities(e)}
+                                                    checkBoxes={this.state.categories[3].cities}/>
+                    break
+                case 2:
+                    componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
+                    break
+                default:
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
+            }
+        } else if (this.state.selectedCategory === 'paslaugos/grozis-ir-sveikata') {
+            switch(this.state.page) {
+                case 1:
+                    componentToReturn = <CheckBoxes text={'Pasirinkite Jums tinkančius miestus'}
+                                                    setCheckBoxes={(e) => this.setCities(e)}
+                                                    checkBoxes={this.state.categories[4].cities}/>
+                    break
+                case 2:
+                    componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
+                    break
+                default:
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
+            }
+        } else if (this.state.selectedCategory === 'paslaugos/sveikata') {
+            switch (this.state.page) {
+                case 1:
+                    componentToReturn = <CheckBoxes text={'Pasirinkite Jums tinkančius miestus'}
+                                                    setCheckBoxes={(e) => this.setCities(e)}
+                                                    checkBoxes={this.state.categories[5].cities}/>
+                    break
+                case 2:
+                    componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
+                    break
+                default:
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
+            }
+        } else if (this.state.selectedCategory === 'dovanos') {
+            switch (this.state.page) {
+                case 1:
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setSubCategory(e)} options={this.state.categories[6].subcategories} selectCategory={'Kam ieškote dovanos?'}/>
+                    break
+                case 2:
+                    componentToReturn = <CheckBoxes text={'Pasirinkite Jums tinkančius miestus'}
+                                                    setCheckBoxes={(e) => this.setCities(e)}
+                                                    checkBoxes={this.state.categories[6].cities}/>
+                    break
+                case 3:
+                    componentToReturn = <SelectPrice setPrice={(e) => this.setPrice(e)}/>
+                    break
+                default:
+                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setCategory(e)} options={this.state.categories} selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}/>
             }
         }
         return componentToReturn
     }
 
     render() {
+        console.log(this.state.page)
         return(
             <div className={'banner'}>
                 <div className="header">

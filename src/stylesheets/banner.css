@@ -102,6 +102,6 @@ option {
     .checkBoxGrid {
         grid-template-columns: auto;
         overflow-y: scroll;
-        height: 220px;
+        /*height: 180px;*/
     }
 }

@@ -4,7 +4,7 @@ function SelectCategory(props) {
     return(
         <div className="container">
             <label className={'categoryLabel'}>
-                {props.selectCategory ? 'Ką mėgsta žmogus, kuriam ieškote dovanos?' : ''}
+                {props.selectCategory}
                 <select onChange={(e) => props.setSelectOption(e)} className={'categorySelectBox'} id="categories">
                     <option>Pasirinkite kategoriją</option>
                     {props.options.map((option, i) => {
