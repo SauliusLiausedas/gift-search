@@ -85,6 +85,9 @@ const data = {
                 {name: 'Tėvams', path: '/dovanos-tevams'},
                 {name: 'Senjorams', path: '/dovanos-senjorams'},
                 {name: 'Vaikams', path: '/dovanos-vaikams'},
+                {name: 'Šeimai', path: '/dovanos-seimai'},
+                {name: 'Vyrui', path: '/dovanos-vyrams'},
+                {name: 'Moteriai', path: '/dovanos-moterims'},
             ],
             cities: [
                 ['Prienai', '801624355'], ['Vilnius', '428300744'], ['Marijampolė', '801826693'], ['Rietavas', '801624364'],

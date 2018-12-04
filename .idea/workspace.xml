@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7abfb28b-ea45-42c3-95cd-bd5e957f9ec7" name="Default Changelist" comment="Add 2 categories with filters">
+    <list default="true" id="7abfb28b-ea45-42c3-95cd-bd5e957f9ec7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/banner/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/banner/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banner/checkboxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/banner/checkboxes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/banner/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/banner/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/banner/selectcategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/banner/selectcategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banner/selectprice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/banner/selectprice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/banner.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/banner/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1534">
-              <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+            <state relative-caret-position="286">
+              <caret line="89" column="59" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -43,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stylesheets/banner.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="104" column="8" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -52,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/banner/banner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
+            <state relative-caret-position="279">
+              <caret line="235" column="43" lean-forward="true" selection-start-line="235" selection-start-column="43" selection-end-line="235" selection-end-column="43" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -65,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/banner/selectprice.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -82,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/banner/checkboxes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="46" />
+            <state relative-caret-position="279">
+              <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -94,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/banner/selectcategory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="105" lean-forward="true" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+            <state relative-caret-position="104">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -104,17 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setCatego</find>
-      <find>container</find>
-      <find>window.</find>
-      <find>peopleCo</find>
-      <find>selectedNig</find>
-      <find>999</find>
-      <find>console.lg</find>
-      <find>console.</find>
-      <find>minPrice</find>
-      <find>toliau</find>
-      <find>.length</find>
       <find>viesbuciai</find>
       <find>checkBoxGrid</find>
       <find>Birštonas</find>
@@ -132,6 +124,19 @@
       <find>SelectPrice</find>
       <find>page</find>
       <find>setSelectOption</find>
+      <find>header</find>
+      <find>.header</find>
+      <find>.categoryLabel</find>
+      <find>.category</find>
+      <find>==</find>
+      <find>check</find>
+      <find>che</find>
+      <find>checkBoxContainer</find>
+      <find>price</find>
+      <find>.search</find>
+      <find>.next</find>
+      <find>[5]</find>
+      <find>container</find>
     </findStrings>
     <replaceStrings>
       <replace>selectCategory={'Ką mėgsta žmogus, kuriam ieškote dovanos?'}</replace>
@@ -144,15 +149,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/services/helperfunctions.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/banner/selectprice.js" />
-        <option value="$PROJECT_DIR$/src/banner/checkboxes.js" />
-        <option value="$PROJECT_DIR$/src/stylesheets/banner.css" />
         <option value="$PROJECT_DIR$/src/banner/selectcategory.js" />
         <option value="$PROJECT_DIR$/src/banner/data.js" />
+        <option value="$PROJECT_DIR$/src/banner/checkboxes.js" />
         <option value="$PROJECT_DIR$/src/banner/banner.js" />
+        <option value="$PROJECT_DIR$/src/stylesheets/banner.css" />
       </list>
     </option>
   </component>
@@ -186,12 +191,6 @@
               <item name="christmas-gifts-search" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="banner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="christmas-gifts-search" type="b2602c69:ProjectViewProjectNode" />
-              <item name="christmas-gifts-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="christmas-gifts-search" type="b2602c69:ProjectViewProjectNode" />
@@ -244,7 +243,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543692580014</updated>
       <workItem from="1543692581265" duration="1169000" />
-      <workItem from="1543748527592" duration="33024000" />
+      <workItem from="1543748527592" duration="37124000" />
     </task>
     <task id="LOCAL-00001" summary="Add 2 categories with filters">
       <created>1543829531945</created>
@@ -253,15 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543829531945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add other categories">
+      <created>1543940820150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543940820150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34193000" />
+    <option name="totallyTimeSpent" value="38293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -308,7 +313,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add 2 categories with filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 2 categories with filters" />
+    <MESSAGE value="Add other categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add other categories" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/images/background.jpg">
@@ -338,13 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/helperfunctions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -352,48 +351,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/banner/selectprice.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/banner/checkboxes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="46" />
+        <state relative-caret-position="279">
+          <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylesheets/banner.css">
+    <entry file="file://$PROJECT_DIR$/src/banner/selectcategory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="104" column="8" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="24" />
+        <state relative-caret-position="104">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/banner/selectcategory.js">
+    <entry file="file://$PROJECT_DIR$/src/stylesheets/banner.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="105" lean-forward="true" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+        <state relative-caret-position="170">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/banner/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1534">
-          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        <state relative-caret-position="286">
+          <caret line="89" column="59" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/banner/banner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
+        <state relative-caret-position="279">
+          <caret line="235" column="43" lean-forward="true" selection-start-line="235" selection-start-column="43" selection-end-line="235" selection-end-column="43" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

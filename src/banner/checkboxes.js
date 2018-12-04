@@ -12,7 +12,7 @@ class CheckBoxes extends Component {
     componentWillReceiveProps(nextProps, nextContext) {
         let uncheck = document.getElementsByTagName('input')
         for(let box in uncheck) {
-            if(uncheck[box].type =='checkbox'){
+            if(uncheck[box].type === 'checkbox'){
                 uncheck[box].checked = false
             }
         }
@@ -32,7 +32,7 @@ class CheckBoxes extends Component {
 
     render(){
         return(
-            <div className="container checkBoxContainer">
+            <div className="checkBoxContainer">
                 <h2 className={'checkBoxText'}>{this.props.text}</h2>
                 <ul className={'checkBoxGrid'}>
                     {this.props.checkBoxes.map((box, i) => {
@@ -45,7 +45,7 @@ class CheckBoxes extends Component {
                         )
                     })}
                 </ul>
-                <button className={'nextButton'} onClick={() => this.props.setCheckBoxes(this.state.boxValues)}>Toliau</button>
+                <button className={'nextButton searchButton'} onClick={() => this.props.setCheckBoxes(this.state.boxValues)}>Toliau</button>
             </div>
         )
     }

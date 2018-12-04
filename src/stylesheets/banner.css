@@ -3,12 +3,12 @@
     background-image: url('../images/background.jpg');
     font-family: 'Dancing Script', cursive;
     background-size: contain;
-    width: 70%;
+    width: 100%;
     margin: 5% auto;
     height: 450px;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 15% 65% 20%;
     color: rgba(255, 255, 255, 0.9);
 }
 .header {
@@ -16,7 +16,7 @@
     grid-column-start: 2;
 }
 .container {
-    grid-row-start: 2;
+    user-select: none;
     grid-column-start: 2;
     padding-top: 10%;
 }
@@ -52,17 +52,17 @@
 }
 .categorySelectBox {
     margin-top: 10%;
-    width: 80%;
+    width: 70%;
     height: 15%;
     border: 2px solid rgb(181, 0, 45);
     outline: none;
     background-color: rgba(251, 102, 108, 0.9);
     color: inherit;
 }
-option {
-    filter: hue-rotate(90deg);
+.firstRow {
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
-
 /*======================CHECKBOXES===================*/
 .checkBoxGrid {
     display: grid;
@@ -84,7 +84,10 @@ option {
     zoom: 1.5;
 }
 .checkBoxContainer {
-    padding-top: 0;
+    padding-top: 20px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
 }
 .checkBoxText {
     margin-top: 0;
@@ -92,6 +95,29 @@ option {
 .nextButton {
     position: relative;
     margin-top: 50px;
+    width: 30%;
+    font-size: 1.5em;
+    height: 40px;
+}
+.nextButton:active {
+    width: 29%;
+    height: 38px;
+    font-size: 1.4em;
+}
+/*==============PRICE===============*/
+.priceSelectCenter {
+    margin-top: 10%;
+}
+.priceInput {
+    width: 50%;
+    max-width: 250px;
+}
+
+/*================MEDIA=================*/
+@media only screen and (min-width: 1400px) {
+    .banner {
+        grid-template-columns: 20% 50% 30%;
+    }
 }
 @media only screen and (max-width: 1023px) {
     .checkBoxGrid {
@@ -102,6 +128,30 @@ option {
     .checkBoxGrid {
         grid-template-columns: auto;
         overflow-y: scroll;
-        /*height: 180px;*/
     }
+}
+@media only screen and (max-width: 500px) {
+    .nextButton {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 355px) {
+    .container {
+        padding-top: 50px;
+    }
+    .nextButton {
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .header > h1 {
+        font-size: 1.5em;
+    }
+    .searchButton {
+        font-size: 1.2em;
+    }
+}
+/*==============SCROLLBAR=============*/
+::-webkit-scrollbar {
+    display: none;
 }

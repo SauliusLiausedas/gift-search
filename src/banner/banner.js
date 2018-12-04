@@ -83,7 +83,7 @@ class Banner extends Component {
             let hotelTypes = this.state.selectedHotelType.join(',')
             this.url = this.url + 'filters[15]=' + hotelTypes
         }
-        if (this.state.travelLocationCountry) {
+        if (this.state.travelLocationCountry && this.state.travelLocationCountry.length > 0) {
             let locationCountries = this.state.travelLocationCountry.join(',')
             this.url = this.url + `filters[5]=${locationCountries}&`
         }
@@ -209,7 +209,7 @@ class Banner extends Component {
         } else if (this.state.selectedCategory === 'dovanos') {
             switch (this.state.page) {
                 case 1:
-                    componentToReturn =  <SelectCategory setSelectOption={(e) => this.setSubCategory(e)} options={this.state.categories[6].subcategories} selectCategory={'Kam ieškote dovanos?'}/>
+                    componentToReturn =  <SelectCategory styleClass={'firstRow'} setSelectOption={(e) => this.setSubCategory(e)} options={this.state.categories[6].subcategories} selectCategory={'Kam ieškote dovanos?'}/>
                     break
                 case 2:
                     componentToReturn = <CheckBoxes text={'Pasirinkite Jums tinkančius miestus'}
@@ -227,11 +227,10 @@ class Banner extends Component {
     }
 
     render() {
-        console.log(this.state.page)
         return(
             <div className={'banner'}>
                 <div className="header">
-                    <h1> Išrinkite geriausią Kalėdų dovaną</h1>
+                    {this.state.page === 0 ? <h1> Išrinkite geriausią Kalėdų dovaną</h1> : ''}
                 </div>
                 {this.renderContainer()}
                 <button className="searchButton" onClick={() => this.redirect()}> Ieškoti </button>
